@@ -23,7 +23,7 @@ func HandleRequest(ctx context.Context, event Event) (string, error) {
 	}
 	var date types.Date
 	if event.Date != "" {
-		date.Set(event.Order)
+		date.Set(event.Date)
 	}
 	var category types.Category
 	if event.Category != "" {
