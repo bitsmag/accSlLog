@@ -1,11 +1,12 @@
 package db
 
 import (
-	"acc_lambda_log/types"
 	"fmt"
 	"math/rand"
 	"strconv"
 	"time"
+
+	"github.com/bitsmag/accSlLog/src/accSlLog/types"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"

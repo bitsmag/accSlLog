@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"acc_lambda_log/cmd"
-	"acc_lambda_log/types"
+	"github.com/bitsmag/accSlLog/src/accSlLog/cmd"
+	"github.com/bitsmag/accSlLog/src/accSlLog/types"
 
 	"github.com/aws/aws-lambda-go/lambda"
 )

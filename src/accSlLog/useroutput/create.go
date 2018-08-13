@@ -1,11 +1,12 @@
 package useroutput
 
 import (
-	"acc_lambda_log/stringutil"
-	"acc_lambda_log/types"
 	"sort"
 	"strconv"
 	"strings"
+
+	"github.com/bitsmag/accSlLog/src/accSlLog/stringutil"
+	"github.com/bitsmag/accSlLog/src/accSlLog/types"
 )
 
 // CreateBalanceResp returns a string to inform the user about the account balance

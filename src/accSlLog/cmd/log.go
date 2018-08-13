@@ -1,10 +1,11 @@
 package cmd
 
 import (
-	"acc_lambda_log/db"
-	"acc_lambda_log/types"
-	"acc_lambda_log/useroutput"
 	"fmt"
+
+	"github.com/bitsmag/accSlLog/src/accSlLog/db"
+	"github.com/bitsmag/accSlLog/src/accSlLog/types"
+	"github.com/bitsmag/accSlLog/src/accSlLog/useroutput"
 )
 
 func LogCmdHandler(logOrder types.Order, logDate types.Date, logCategory types.Category) (string, error) {

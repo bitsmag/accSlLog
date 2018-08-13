@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"acc_lambda_log/stringutil"
+	"github.com/bitsmag/accSlLog/src/accSlLog/stringutil"
 )
 
 // Date is a wrapper for time.Time to implement the pflag.Value interface

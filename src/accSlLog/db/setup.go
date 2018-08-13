@@ -1,8 +1,9 @@
 package db
 
 import (
-	"acc_lambda_log/types"
 	"fmt"
+
+	"github.com/bitsmag/accSlLog/src/accSlLog/types"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
