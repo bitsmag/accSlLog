@@ -12,7 +12,7 @@ deploy:
   secret_access_key:
     secure: m+VNYEuYrCVyFJJIUi5m4XqGEAkW6/i42DVl5ULQD1hoFwkNqe6RWozU4oP+wop3XzepM4ei78XnEVKE51ubx2clzWFeXEOhPsqlvjkcvsIGDdO/pSVUR+ObFUCUuhy4A8l85lqdVHj0OI4y1gEObQUKLVRn3c4leSv/xRWU6hE+C2LlBu6q+U6G2Bq4An1jDDH4iBC49cI6Z0iU/VJfetau7x1dYv99CxBxqEmjpavvxxSs3afvBSk2JfekwOzh3rByu6ejm/k8Bl/DxhZi+WLlMLbC5vtr6FF8uUjD2jBXDJSPKHqhSo3Rqg7UUmONvbmbAMVG6wKeCwxWk2iFwiUsG/wZMDEH66QDL3PGyyb+CffU79mBbvHrlOjJzRJasS1IvOGetijNp5Z1kCnRv1ZHS5aufbN9LPM+3caozBV5YroV0ZtjiV+m5rWUS9jB0aLS2IVaFjPfYSbE5L/wNx/VeMuU1CgxoIIhBfhABdN0zRzKGM404blLbr9qPAiEdKx2lqLE3ijpqfgBl3bObulxzKeAHeJrj7dkhscQBdykJSfPbhl3EcCDP/ilGhWloUug5X82E6maVroQdoolI8BsH+I9EA7HWfAMQflzxK4EyC0TagnPwgIQGk7nCiys6Tg3l0fG9cpSt++lFnMc00XPhKJndMGwYm/1mvH3+xA=
   bucket: acc.log.build1
-  acl: bucket_owner_full_controll
+  acl: bucket_owner_full_control
   on:
     repo: bitsmag/accSlLog
   region: us-west-2
