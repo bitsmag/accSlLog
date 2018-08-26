@@ -2,6 +2,7 @@ package db
 
 import (
 	"fmt"
+	"os"
 	"strconv"
 
 	"github.com/bitsmag/accSlLog/src/accSlLog/types"
@@ -42,13 +43,18 @@ func ReadBalance() (float64, error) {
 
 // ReadLogs returns all logEntries
 func ReadLogs() ([]types.LogEntry, error) {
+	tablenameLog := os.Getenv("TABLENAME_LOG")
+	if len(tablenameLog) == 0 {
+		tablenameLog = "Acc_logs"
+	}
+
 	var entries []types.LogEntry
 
 	sess, err := session.NewSession(&aws.Config{Region: aws.String("us-west-2")})
 	svc := dynamodb.New(sess)
 
 	input := &dynamodb.ScanInput{
-		TableName: aws.String("Acc_logs"),
+		TableName: aws.String(tablenameLog),
 	}
 	result, err := svc.Scan(input)
 
