@@ -27,7 +27,7 @@ func HandleRequest(ctx context.Context, event Event) (string, error) {
 	}
 	var category types.Category
 	if event.Category != "" {
-		date.Set(event.Category)
+		category.Set(event.Category)
 	}
 
 	resp, err := cmd.LogCmdHandler(order, date, category)
